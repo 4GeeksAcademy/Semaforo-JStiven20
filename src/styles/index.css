@@ -9,3 +9,63 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+main {
+    background-color: rgb(119, 119, 119);
+    border: 1px solid red;
+    height: 100vh;
+}
+
+.poste {
+    border: 1px solid black;
+    width: 20px;
+    height: 180px;
+    margin: 0px auto;
+    background: black;
+}
+
+.caja {
+    border: 0px solid black;
+    width: 150px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    background: black;
+}
+
+.caja div {
+    border: 1px solid black;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.rojo {
+    background-color: red;
+}
+
+.amarillo {
+    background-color: yellow;
+}
+
+.verde {
+    background-color: green;
+}
+
+.luz-on {
+    box-shadow: -1px -1px 27px 22px rgba(214, 255, 122, 0.75);
+    -webkit-box-shadow: -1px -1px 27px 22px rgba(214, 255, 122, 0.75);
+    -moz-box-shadow: -1px -1px 27px 22px rgba(214, 255, 122, 0.75);
+}
+
+.btn {
+    display: flex;
+    background: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff9900;
+}
