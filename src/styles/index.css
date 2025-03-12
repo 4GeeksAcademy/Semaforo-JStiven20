@@ -60,6 +60,12 @@ main {
     -moz-box-shadow: -1px -1px 27px 22px rgba(214, 255, 122, 0.75);
 }
 
+.btnStyle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .btn {
     display: flex;
     background: white;

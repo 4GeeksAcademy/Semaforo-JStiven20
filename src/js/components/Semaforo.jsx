@@ -3,11 +3,11 @@ import React, { useState } from "react"
 const Semaforo = () => {
     const [selected, setSelected] = useState("rojo");
 
-    /*   const changeColor = (color) => {
-          setSelected(color);
-      } */
+    const changeColor = (color) => {
+        setSelected(color);
+    }
 
-    const changeColor = () => {
+    const changeColorBtn = () => {
         if (selected === "rojo") {
             setSelected("amarillo");
         } else if (selected === "amarillo") {
@@ -16,6 +16,7 @@ const Semaforo = () => {
             setSelected("rojo");
         }
     };
+
 
     return (
         <main>
@@ -36,9 +37,11 @@ const Semaforo = () => {
                     onClick={() => changeColor("verde")}
                 ></div>
 
-                <button className="btn" onClick={() => changeColor(" ")}>Cambiar Luz</button>
-            </div>
 
+            </div>
+            <div className="btnStyle">
+                <button className="btn" onClick={() => changeColorBtn("")}>Cambiar Luz</button>
+            </div>
 
         </main>
     )
